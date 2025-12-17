@@ -414,7 +414,7 @@ class TimerUnitMixin:
         """
         time_unit = _TimeUnit.SECONDS
         if time == _TIMER_NOT_USED:
-            return time, None
+            return time, _TimeUnit.HOURS
         if time > _TIME_UNIT_THRESHOLD:
             time /= 60
             time_unit = _TimeUnit.MINUTES
