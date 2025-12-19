@@ -813,7 +813,7 @@ def _recalc_unit_timer(*, time: float) -> tuple[float, int | None]:
     """Recalculate unit and value of timer."""
     ramp_time_unit = _TimeUnit.SECONDS
     if time == _NOT_USED:
-        return time, None
+        return time, _TimeUnit.HOURS
     if time > 16343:
         time /= 60
         ramp_time_unit = _TimeUnit.MINUTES

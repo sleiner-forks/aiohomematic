@@ -1041,6 +1041,7 @@ async def test_ceiprgbwlight(
             "HUE": 44,
             "SATURATION": 0.66,
             "DURATION_VALUE": _NOT_USED,
+            "DURATION_UNIT": _TimeUnit.HOURS,
             "RAMP_TIME_UNIT": _TimeUnit.SECONDS,
             "RAMP_TIME_VALUE": 5,
             "LEVEL": 1.0,
@@ -1054,6 +1055,7 @@ async def test_ceiprgbwlight(
         paramset_key_or_link_address=ParamsetKey.VALUES,
         values={
             "DURATION_VALUE": _NOT_USED,
+            "DURATION_UNIT": _TimeUnit.HOURS,
             "RAMP_TIME_UNIT": _TimeUnit.SECONDS,
             "RAMP_TIME_VALUE": 5,
             "LEVEL": 0.0,
